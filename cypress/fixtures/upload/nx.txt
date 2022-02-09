@@ -1,0 +1,2 @@
+libretity oluşturma komutu: npx nx g @nrwl/angular:lib ui => ui lib ismi
+component oluşturm: npx nx g component todos --project=ui --export=>todos compont ismi
