@@ -24,7 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import 'cypress-file-upload';
-import { selectors } from 'sizzle';
 
 Cypress.Commands.add('login', (username, password) => {
     cy.get('#txtUsername').type(username)
