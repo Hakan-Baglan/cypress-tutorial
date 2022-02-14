@@ -26,9 +26,9 @@
 import 'cypress-file-upload';
 
 Cypress.Commands.add('login', (username, password) => {
-    cy.get('#txtUsername').type(username)
-    cy.get('#txtPassword').type(password)
-    cy.get('#btnLogin').click()
+    cy.get('[type="email"]').type(username)
+    cy.get('[type="password"]').type(password)
+    cy.get('.btn').click()
 })
 
 Cypress.Commands.add('UploadImage',(elementPath,ImagePath,logoName) => { 
