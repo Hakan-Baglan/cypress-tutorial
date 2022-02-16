@@ -1,3 +1,5 @@
 {
-  "baseUrl": "https://test.iyikisordun.com/login.php"
+  "baseUrl": "https://test.iyikisordun.com/login.php",
+  "defaultCommandTimeout":4500,
+  "pageLoadTimeout":4500
 }

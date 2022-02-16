@@ -19,3 +19,24 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 require('cypress-xpath')
+
+before(() => {
+    // spec dosyasındaki bütün testler koşmadan önce 1 kez çalıştırılır.
+  })
+  
+  beforeEach(() => {
+    // Her bir testten önce çalıştırılır.
+    const userName = "cypress_test_1@gmail.com"
+    const password = "admin_123"
+    cy.visit(Cypress.config("baseUrl"))
+    cy.login(userName, password)
+    cy.url().should("include","index.php")
+  })
+  
+  after(() => {
+    // spec dosyasındaki bütün testler tamamlandığında sadece 1 kez çalıştırılır.
+  })
+  
+  afterEach(() => {
+    // Her bir testten sonra sadece 1 kez çalıştırılır.
+  })
